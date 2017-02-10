@@ -17,7 +17,7 @@
   "minimum-stability": "stable",
   "require": {
           "yiisoft/yii2": "*",
-          "fooplugins/footable": "3.*"
+          "fooplugins/footable": "3.*@dev"
   },
   "autoload": {
           "psr-0": { "yii\\footable\\": "" }
