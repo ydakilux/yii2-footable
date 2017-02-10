@@ -14,6 +14,7 @@
                   "email": "ydakilux@gmail.com"
           }
   ],
+  "minimum-stability": "stable",
   "require": {
           "yiisoft/yii2": "*",
           "filsh/footable": "3.*"
