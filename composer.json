@@ -14,10 +14,9 @@
                   "email": "ydakilux@gmail.com"
           }
   ],
-  "minimum-stability": "stable",
   "require": {
           "yiisoft/yii2": "*",
-          "fooplugins/footable": "3.*@dev"
+          "fooplugins/footable": "~3"
   },
   "autoload": {
           "psr-0": { "yii\\footable\\": "" }
