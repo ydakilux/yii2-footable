@@ -16,7 +16,7 @@
   ],
   "require": {
           "yiisoft/yii2": "*",
-          "bower-asset/footable": "*"
+          "bower-asset/footable": "3.*"
   },
   "autoload": {
           "psr-0": { "yii\\footable\\": "" }
