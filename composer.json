@@ -1,25 +1,28 @@
 {
-  "name": "ydakilux/yii2-footable",
-  "description": "Responsive ListView for Yii2 framework",
-  "keywords": ["yii", "bootstrap", "footable"],
-  "type": "library",
-  "license": "BSD-3-Clause",
-  "support": {
-          "email": "ydakilux@gmail.com",
-          "source": "https://github.com/ydakilux/yii2-footable"
-  },
-  "authors": [
-          {
-                  "name": "Ydakilux",
-                  "email": "ydakilux@gmail.com"
-          }
-  ],
-  "require": {
-          "yiisoft/yii2": "*",
-          "bower-asset/footable": "3.*"
-  },
-  "autoload": {
-          "psr-0": { "yii\\footable\\": "" }
-  },
-  "target-dir": "yii/footable"
+	"name": "ydakilux/yii2-footable",
+	"type": "yii2-extension",
+	"minimum-stability": "dev",
+	"description": "Responsive ListView for Yii2 framework",
+	"keywords": ["yii", "bootstrap", "footable"],
+	"license": "BSD-3-Clause",
+	"support": {
+		"email": "ydakilux@gmail.com",
+		"source": "https://github.com/ydakilux/yii2-footable"
+	},
+	"authors": [
+		{
+			"name": "Ydakilux",
+			"email": "ydakilux@gmail.com"
+		}
+	],
+	"require": {
+		"yiisoft/yii2": "*",
+		"bower-asset/footable": "3.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"ydakilux\\footable\\": ""
+		}
+	}
+
 }
