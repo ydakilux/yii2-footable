@@ -1,15 +1,20 @@
 <?php
 
-namespace yii\footable;
+namespace ydakilux\footable;
 
 use \Yii;
 
 class FootableAsset extends \yii\web\AssetBundle
 {
-    public $sourcePath = '@vendor/ydakilux/footable';
+//    public $sourcePath = '@vendor/ydakilux/footable';
+    public $sourcePath = '@bower/footable/';
+
+    public $css = [
+        'compiled/footable.standalone.css'
+    ];
 
     public $js = [
-        'js/footable.js'
+        'compiled/footable.js'
     ];
     
     public $depends = [
