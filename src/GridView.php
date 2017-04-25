@@ -10,6 +10,7 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 //use yii\grid\Column;
 use yii\widgets\BaseListView;
+
 class GridView extends \yii\grid\GridView
 //class GridView extends BaseListView
 {
@@ -198,6 +199,7 @@ class GridView extends \yii\grid\GridView
     /* --------------------------------------------------------------------------------------------------------------------- */
     /* --------------------------------------------------------------------------------------------------------------------- */
     /* --------------------------------------------------------------------------------------------------------------------- */
+    
     /**
      * @inheritdoc
      */
@@ -219,6 +221,7 @@ class GridView extends \yii\grid\GridView
         $this->_toggleButtonId = $this->options['id'] . '-togdata-' . ($this->_isShowAll ? 'all' : 'page');
         parent::init();
     }
+    
     /**
      * Sets a default css class within `options` if not set
      *
@@ -231,6 +234,7 @@ class GridView extends \yii\grid\GridView
             $options['class'] = $css;
         }
     }
+    
     /**
      * Initialize toggle data button options.
      */
@@ -275,6 +279,7 @@ class GridView extends \yii\grid\GridView
         }
         $this->toggleDataOptions[$tag]['data-pjax'] = $this->pjax ? "true" : false;
     }
+    
     /**
      * Renders the toggle data button.
      *
@@ -296,6 +301,7 @@ class GridView extends \yii\grid\GridView
         static::initCss($this->toggleDataContainer, 'btn-group  pull-right');
         return Html::tag('div', Html::a($label, $url, $options), $this->toggleDataContainer);
     }
+    
     /**
      * Renders the table header.
      * @return string the rendering result.
@@ -348,6 +354,7 @@ class GridView extends \yii\grid\GridView
         $content = Html::tag('tr', implode('', $cells), $this->headerRowOptions);
         return "<thead>\n" . $content . "\n</thead>";
     }
+    
     /**
      * Renders the data models for the grid view.
      */
@@ -390,6 +397,7 @@ class GridView extends \yii\grid\GridView
         }
         return Html::tag('table', implode("\n", $content), $this->tableOptions);
     }
+    
     /**
      * @inheritdoc
      */
@@ -404,6 +412,7 @@ class GridView extends \yii\grid\GridView
                 return parent::renderSection($name);
         }
     }
+    
     public function run()
     {
         FootableAsset::register($this->getView());
@@ -430,6 +439,7 @@ class GridView extends \yii\grid\GridView
         return Html::tag($tag, $content, $options);
 //        return $this->renderItems();
     }
+    
     protected function registerScript()
     {
         $configure = !empty($this->footableOptions) ? Json::encode($this->footableOptions) : '';
