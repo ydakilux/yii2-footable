@@ -21,7 +21,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ydakilux\\footable\\": ""
+			"ydakilux\\yii2-footable\\": ""
 		}
 	}
 
